@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+#textblock {
+  background-color: #210002;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-top: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#textblock-title {
+  color: #ffaf1b;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#textblock-content {
+  color: #ffaf1b;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.animation,
+.animation_layer {
+  height: 1000px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+#artback {
+  background-image: url(./img/background.png);
+}
+
+#mountain {
+  background-image: url(./img/mountains.png);
+}
+
+#logoland {
+  background-image: url(./img/logo_land.png);
+}
+
+#jungle1 {
+  background-image: url(./img/jungle1.png);
+}
+
+#jungle2 {
+  background-image: url(./img/jungle2.png);
+}
+
+#jungle3 {
+  background-image: url(./img/jungle3.png);
+}
+
+#jungle4 {
+  background-image: url(./img/jungle4.png);
+}
+
+#jungle5 {
+  background-image: url(./img/jungle5.png);
+}
+
+#manonmountain {
+  background-image: url(./img/man_on_mountain.png);
 }
